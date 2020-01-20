@@ -1,23 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projects\\Viewtube-Xamarin\\Viewtube-Xamarin\\Viewtube-Xamarin\\Viewtube-Xamarin.csproj": {}
+    "C:\\Projects\\viewtube-xamarin\\Viewtube-Xamarin\\Viewtube-Xamarin\\Viewtube-Xamarin.csproj": {}
   },
   "projects": {
-    "C:\\Projects\\Viewtube-Xamarin\\Viewtube-Xamarin\\Viewtube-Xamarin\\Viewtube-Xamarin.csproj": {
+    "C:\\Projects\\viewtube-xamarin\\Viewtube-Xamarin\\Viewtube-Xamarin\\Viewtube-Xamarin.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\Viewtube-Xamarin\\Viewtube-Xamarin\\Viewtube-Xamarin\\Viewtube-Xamarin.csproj",
+        "projectUniqueName": "C:\\Projects\\viewtube-xamarin\\Viewtube-Xamarin\\Viewtube-Xamarin\\Viewtube-Xamarin.csproj",
         "projectName": "Viewtube-Xamarin",
-        "projectPath": "C:\\Projects\\Viewtube-Xamarin\\Viewtube-Xamarin\\Viewtube-Xamarin\\Viewtube-Xamarin.csproj",
-        "packagesPath": "C:\\Users\\Maurice\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\Viewtube-Xamarin\\Viewtube-Xamarin\\Viewtube-Xamarin\\obj\\",
+        "projectPath": "C:\\Projects\\viewtube-xamarin\\Viewtube-Xamarin\\Viewtube-Xamarin\\Viewtube-Xamarin.csproj",
+        "packagesPath": "C:\\Users\\moegerli.UNISG\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\viewtube-xamarin\\Viewtube-Xamarin\\Viewtube-Xamarin\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Maurice\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\moegerli.UNISG\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -26,7 +27,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://unisg.pkgs.visualstudio.com/_packaging/unisg/nuget/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.0": {
@@ -52,6 +54,14 @@
               "target": "Package",
               "version": "[12.0.3, )"
             },
+            "Octane.Xam.VideoPlayer": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Syncfusion.Xamarin.Core": {
+              "target": "Package",
+              "version": "[17.4.0.43, )"
+            },
             "Toasts.Forms.Plugin": {
               "target": "Package",
               "version": "[3.3.2, )"
@@ -75,7 +85,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

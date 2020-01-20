@@ -2,8 +2,8 @@
 	.section	.rodata..L.str.1,"aMS",@progbits,1
 	.type	.L.str.1, @object
 .L.str.1:
-	.asciz	"com.companyname.viewtube_xamarin"
-	.size	.L.str.1, 33
+	.asciz	"com.mauriceoegerli.viewtube"
+	.size	.L.str.1, 28
 	.section	.data.application_config,"aw",@progbits
 	.type	application_config, @object
 	.p2align	2
@@ -61,7 +61,7 @@ mono_aot_mode_name:
 	.section	.rodata..L.str.8,"aMS",@progbits,1
 	.type	.L.str.8, @object
 .L.str.8:
-	.asciz	"25de0b5f-ca4d-4320-84ce-076935027617"
+	.asciz	"7ee0fa64-65c9-4d99-9dd1-6cbf68e3dbbb"
 	.size	.L.str.8, 37
 	.section	.rodata..L.str.9,"aMS",@progbits,1
 	.type	.L.str.9, @object

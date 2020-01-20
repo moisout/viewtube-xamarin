@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:graphics="clr-namespace:Syncfusion.XForms.Graphics;assembly=Syncfusion.Core.XForms"
              mc:Ignorable="d"
              x:Class="Viewtube_Xamarin.Views.MainPageMaster"
              Title="Master">
@@ -21,23 +22,47 @@
           </x:Array>
       </d:ListView.ItemsSource>
       <ListView.Header>
-        <Grid BackgroundColor="#03A9F4">
+        <Grid BackgroundColor="#1e1e1e">
           <Grid.ColumnDefinitions>
             <ColumnDefinition Width="10"/>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="10"/>
           </Grid.ColumnDefinitions>
           <Grid.RowDefinitions>
-            <RowDefinition Height="30"/>
-            <RowDefinition Height="80"/>
-            <RowDefinition Height="Auto"/>
             <RowDefinition Height="10"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="0"/>
+            <RowDefinition Height="50"/>
           </Grid.RowDefinitions>
-          <Label
-              Grid.Column="1"
-              Grid.Row="2"
-              Text="AppName"
-              Style="{DynamicResource SubtitleStyle}"/>
+          <graphics:SfGradientView Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" Grid.RowSpan="4">
+            <graphics:SfGradientView.BackgroundBrush>
+              <graphics:SfLinearGradientBrush StartPoint="0,2" EndPoint="1,2">
+                <graphics:SfLinearGradientBrush.GradientStops>
+                  <graphics:SfGradientStop Color="#f12711" Offset="0.0" />
+                  <graphics:SfGradientStop Color="#ff7b3b" Offset="1.0" />
+                </graphics:SfLinearGradientBrush.GradientStops>
+              </graphics:SfLinearGradientBrush>
+            </graphics:SfGradientView.BackgroundBrush>
+          </graphics:SfGradientView>
+          <Label Padding="15,0,0,0"
+                 Text="{Binding AuthorText}" 
+                 Grid.Row="3"
+                 Grid.ColumnSpan="2"
+                 Grid.Column="0"
+                 FontSize="14"
+                 TextColor="White"
+                 VerticalTextAlignment="Start">
+          </Label>
+          <Label Padding="15,0,0,10"
+                 Text="{Binding InstanceUrl}" 
+                 Grid.Row="3"
+                 Grid.ColumnSpan="2"
+                 Grid.Column="0"
+                 FontSize="14"
+                 TextColor="White"
+                 VerticalTextAlignment="End">
+          </Label>
+          <Image Margin="1,0" Grid.Row="1" Grid.ColumnSpan="2" Grid.Column="0" Source="drawable/text_logo.png"></Image>
         </Grid>
       </ListView.Header>
       <ListView.ItemTemplate>
@@ -48,7 +73,7 @@
                     VerticalTextAlignment="Center" 
                     Text="{Binding Title}" 
                     d:Text="{Binding .}"
-                    FontSize="24"/>
+                    FontSize="16"/>
             </StackLayout>
           </ViewCell>
         </DataTemplate>

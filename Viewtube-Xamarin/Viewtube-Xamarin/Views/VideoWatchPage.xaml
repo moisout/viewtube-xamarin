@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:videoPlayer="clr-namespace:Octane.Xamarin.Forms.VideoPlayer;assembly=Octane.Xamarin.Forms.VideoPlayer"
+             mc:Ignorable="d"
+             x:Class="Viewtube_Xamarin.Views.ItemDetailPage"
+             Style="{StaticResource PageStyle}"
+             Title="{Binding Title}">
+
+    <ContentPage.Content >
+        <StackLayout>
+            <Grid Padding="10" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="210"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="20" />
+                    <RowDefinition Height="20" />
+                </Grid.RowDefinitions>
+                <AbsoluteLayout Grid.ColumnSpan="2" Grid.Column="0" Grid.RowSpan="4" Grid.Row="0">
+                    <ActivityIndicator 
+                        AbsoluteLayout.LayoutBounds=".5,1,.5,.2" 
+                        AbsoluteLayout.LayoutFlags="All" 
+                        Color="White" 
+                        IsRunning="True" 
+                        IsVisible="{Binding IsBusy, Mode=OneWay}"/>
+                </AbsoluteLayout>
+                <videoPlayer:VideoPlayer Grid.Row="0" 
+                                         Grid.ColumnSpan="2" 
+                                         Grid.Column="0" 
+                                         AutoPlay="True"
+                                         Source="{Binding VideoDetail.FormatStreams[0].Url}" />
+                <Label Text="{Binding VideoDetail.Title}" 
+                       FontSize="Medium" 
+                       Grid.Row="1" 
+                       Grid.ColumnSpan="2" 
+                       Grid.Column="0"
+                       LineBreakMode="WordWrap" />
+                <Label Text="{Binding VideoDetail.Author}"  Grid.Row="3" Grid.ColumnSpan="2" Grid.Column="0" />
+                <Label Text="{Binding VideoDetail.Views}" FontSize="Medium"  Grid.Row="0" Grid.ColumnSpan="2" Grid.Column="0"/>
+                <Label Text="{Binding VideoDetail.Description}" 
+                       FontSize="Small" 
+                       Grid.Row="3" 
+                       Grid.ColumnSpan="2" 
+                       Grid.Column="0"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>

@@ -14,6 +14,7 @@ namespace Viewtube_Xamarin
             InitializeComponent();
 
             DependencyService.Register<PopularVideosStore>();
+            DependencyService.Register<VideoDetailStore>();
             MainPage = new MainPage();
         }
 

@@ -6,6 +6,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using Octane.Xamarin.Forms.VideoPlayer.Android;
 using Xamarin.Forms;
 using Plugin.Toasts;
 
@@ -28,6 +29,8 @@ namespace Viewtube_Xamarin.Droid
 
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
+
+            FormsVideoPlayer.Init();
 
             LoadApplication(new App());
         }

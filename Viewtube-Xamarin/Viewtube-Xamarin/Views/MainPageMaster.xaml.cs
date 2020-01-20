@@ -6,7 +6,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
-
+using Viewtube_Xamarin.Services;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -28,6 +28,16 @@ public partial class MainPageMaster : ContentPage
     class MainPageMasterViewModel : INotifyPropertyChanged
     {
         public ObservableCollection<MainPageMasterMenuItem> MenuItems { get; set; }
+
+        public string InstanceUrl
+        {
+          get { return $"Powered by {Invidious.ApiUrl}"; }
+        }
+
+        public string AuthorText
+        {
+          get { return "By Maurice Oegerli"; }
+        }
 
         public MainPageMasterViewModel()
         {

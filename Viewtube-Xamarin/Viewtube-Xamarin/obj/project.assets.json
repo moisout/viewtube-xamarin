@@ -35,6 +35,40 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
+      "Octane.Xam.VideoPlayer/3.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "4.0.0.497661"
+        },
+        "compile": {
+          "lib/netstandard2.0/Octane.Xamarin.Forms.VideoPlayer.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Octane.Xamarin.Forms.VideoPlayer.dll": {}
+        }
+      },
+      "Syncfusion.Licensing/17.4.0.43": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Syncfusion.Licensing.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.Core/17.4.0.43": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "17.4.0.43",
+          "Xamarin.Forms": "3.6.0.344457"
+        },
+        "compile": {
+          "lib/netstandard2.0/Syncfusion.Core.XForms.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Syncfusion.Core.XForms.dll": {}
+        }
+      },
       "System.Numerics.Vectors/4.5.0": {
         "type": "package",
         "compile": {
@@ -258,6 +292,89 @@
         "newtonsoft.json.12.0.3.nupkg.sha512",
         "newtonsoft.json.nuspec",
         "packageIcon.png"
+      ]
+    },
+    "Octane.Xam.VideoPlayer/3.1.0": {
+      "sha512": "JFjIeDBrmv1cX8B/N7vuaz2DM75hxufRbfPQVoVNkjp+j/9964lwcIyY6tfZwS3OW2INoPih6snjXG+PdlM6aw==",
+      "type": "package",
+      "path": "octane.xam.videoplayer/3.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid81/Octane.Xamarin.Forms.VideoPlayer.Android.dll",
+        "lib/MonoAndroid81/Octane.Xamarin.Forms.VideoPlayer.Android.xml",
+        "lib/MonoAndroid81/Octane.Xamarin.Forms.VideoPlayer.dll",
+        "lib/MonoAndroid81/Octane.Xamarin.Forms.VideoPlayer.xml",
+        "lib/Xamarin.iOS10/Octane.Xamarin.Forms.VideoPlayer.dll",
+        "lib/Xamarin.iOS10/Octane.Xamarin.Forms.VideoPlayer.iOS.dll",
+        "lib/Xamarin.iOS10/Octane.Xamarin.Forms.VideoPlayer.iOS.xml",
+        "lib/Xamarin.iOS10/Octane.Xamarin.Forms.VideoPlayer.xml",
+        "lib/netstandard2.0/Octane.Xamarin.Forms.VideoPlayer.dll",
+        "lib/netstandard2.0/Octane.Xamarin.Forms.VideoPlayer.xml",
+        "lib/uap10.0/Octane.Xamarin.Forms.VideoPlayer.UWP.dll",
+        "lib/uap10.0/Octane.Xamarin.Forms.VideoPlayer.UWP.xml",
+        "lib/uap10.0/Octane.Xamarin.Forms.VideoPlayer.dll",
+        "lib/uap10.0/Octane.Xamarin.Forms.VideoPlayer.xml",
+        "octane.xam.videoplayer.3.1.0.nupkg.sha512",
+        "octane.xam.videoplayer.nuspec"
+      ]
+    },
+    "Syncfusion.Licensing/17.4.0.43": {
+      "sha512": "4CSeT3CuLxTDiPXrEXlrMVU0Yl3zKeAk6IQ6tw9myqEjh/sdH6VplDmqlaEzznwGEntfEGB3gdOYViaPa9GktQ==",
+      "type": "package",
+      "path": "syncfusion.licensing/17.4.0.43",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/Syncfusion.Licensing.dll",
+        "lib/Xamarin.Mac/Syncfusion.Licensing.dll",
+        "lib/Xamarin.iOS10/Syncfusion.Licensing.dll",
+        "lib/net20/Syncfusion.Licensing.dll",
+        "lib/net35/Syncfusion.Licensing.dll",
+        "lib/net40/Syncfusion.Licensing.dll",
+        "lib/net45/Syncfusion.Licensing.dll",
+        "lib/net451/Syncfusion.Licensing.dll",
+        "lib/net46/Syncfusion.Licensing.dll",
+        "lib/netcoreapp3.0/Syncfusion.Licensing.dll",
+        "lib/netstandard1.0/Syncfusion.Licensing.dll",
+        "lib/netstandard1.2/Syncfusion.Licensing.dll",
+        "lib/netstandard1.4/Syncfusion.Licensing.dll",
+        "lib/netstandard2.0/Syncfusion.Licensing.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.Licensing.dll",
+        "lib/uap10.0/Syncfusion.Licensing.dll",
+        "syncfusion.licensing.17.4.0.43.nupkg.sha512",
+        "syncfusion.licensing.nuspec"
+      ]
+    },
+    "Syncfusion.Xamarin.Core/17.4.0.43": {
+      "sha512": "s0VYN+QXAC1pecdXUxJ+CIvA5wDJGuKe+G+bb9WaUucZ+l1RWALmFEnKBBri90cIc+Dasm33ZmGg80RMvoXWRg==",
+      "type": "package",
+      "path": "syncfusion.xamarin.core/17.4.0.43",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/Syncfusion.Core.XForms.Android.dll",
+        "lib/MonoAndroid10/Syncfusion.Core.XForms.dll",
+        "lib/MonoAndroid10/Syncfusion.Core.XForms.xml",
+        "lib/Xamarin.Mac/Syncfusion.Core.XForms.dll",
+        "lib/Xamarin.Mac/Syncfusion.Core.XForms.macOS.dll",
+        "lib/Xamarin.iOS10/Syncfusion.Core.XForms.dll",
+        "lib/Xamarin.iOS10/Syncfusion.Core.XForms.iOS.dll",
+        "lib/Xamarin.iOS10/Syncfusion.Core.XForms.xml",
+        "lib/netstandard2.0/Syncfusion.Core.XForms.dll",
+        "lib/netstandard2.0/Syncfusion.Core.XForms.xml",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.Core.XForms.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.Core.XForms.xml",
+        "lib/uap10.0/Syncfusion.Core.XForms.UWP.dll",
+        "lib/uap10.0/Syncfusion.Core.XForms.UWP.pri",
+        "lib/uap10.0/Syncfusion.Core.XForms.UWP/Syncfusion.Core.XForms.UWP.xr.xml",
+        "lib/uap10.0/Syncfusion.Core.XForms.UWP/TILRenderer/ToggleIcons/DropDownIcon.xaml",
+        "lib/uap10.0/Syncfusion.Core.XForms.UWP/TILRenderer/ToggleIcons/ToggleCollapsedIcon.xaml",
+        "lib/uap10.0/Syncfusion.Core.XForms.UWP/TILRenderer/ToggleIcons/ToggleVisibleIcon.xaml",
+        "lib/uap10.0/Syncfusion.Core.XForms.dll",
+        "lib/uap10.0/Syncfusion.Core.XForms.xml",
+        "syncfusion.xamarin.core.17.4.0.43.nupkg.sha512",
+        "syncfusion.xamarin.core.nuspec"
       ]
     },
     "System.Numerics.Vectors/4.5.0": {
@@ -620,29 +737,33 @@
     ".NETStandard,Version=v2.0": [
       "NETStandard.Library >= 2.0.3",
       "Newtonsoft.Json >= 12.0.3",
+      "Octane.Xam.VideoPlayer >= 3.1.0",
+      "Syncfusion.Xamarin.Core >= 17.4.0.43",
       "Toasts.Forms.Plugin >= 3.3.2",
       "Xamarin.Essentials >= 1.3.1",
       "Xamarin.Forms >= 4.4.0.991477"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Maurice\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\moegerli.UNISG\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\Viewtube-Xamarin\\Viewtube-Xamarin\\Viewtube-Xamarin\\Viewtube-Xamarin.csproj",
+      "projectUniqueName": "C:\\Projects\\viewtube-xamarin\\Viewtube-Xamarin\\Viewtube-Xamarin\\Viewtube-Xamarin.csproj",
       "projectName": "Viewtube-Xamarin",
-      "projectPath": "C:\\Projects\\Viewtube-Xamarin\\Viewtube-Xamarin\\Viewtube-Xamarin\\Viewtube-Xamarin.csproj",
-      "packagesPath": "C:\\Users\\Maurice\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects\\Viewtube-Xamarin\\Viewtube-Xamarin\\Viewtube-Xamarin\\obj\\",
+      "projectPath": "C:\\Projects\\viewtube-xamarin\\Viewtube-Xamarin\\Viewtube-Xamarin\\Viewtube-Xamarin.csproj",
+      "packagesPath": "C:\\Users\\moegerli.UNISG\\.nuget\\packages\\",
+      "outputPath": "C:\\Projects\\viewtube-xamarin\\Viewtube-Xamarin\\Viewtube-Xamarin\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Maurice\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\moegerli.UNISG\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -651,7 +772,8 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://unisg.pkgs.visualstudio.com/_packaging/unisg/nuget/v3/index.json": {}
       },
       "frameworks": {
         "netstandard2.0": {
@@ -677,6 +799,14 @@
             "target": "Package",
             "version": "[12.0.3, )"
           },
+          "Octane.Xam.VideoPlayer": {
+            "target": "Package",
+            "version": "[3.1.0, )"
+          },
+          "Syncfusion.Xamarin.Core": {
+            "target": "Package",
+            "version": "[17.4.0.43, )"
+          },
           "Toasts.Forms.Plugin": {
             "target": "Package",
             "version": "[3.3.2, )"
@@ -700,7 +830,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

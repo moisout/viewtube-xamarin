@@ -18,6 +18,9 @@ namespace Viewtube_Xamarin.Models
         [JsonProperty("videoThumbnails")]
         public List<Thumbnail> VideoThumbnails { get; set; }
 
+        [JsonProperty("description")]
+        public string Description { get; set; }
+
         [JsonProperty("lengthSeconds")]
         public int LengthSeconds { get; set; }
 
@@ -38,6 +41,9 @@ namespace Viewtube_Xamarin.Models
 
         [JsonProperty("viewCount")]
         public int ViewCount { get; set; }
+
+        [JsonProperty("formatStreams")]
+        public List<FormatStream> FormatStreams { get; set; }
 
         public string ViewCountText { get
             {
