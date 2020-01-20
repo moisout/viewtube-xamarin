@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Viewtube_Xamarin.App">
+
+    <Application.Resources>
+        <ResourceDictionary>
+            <!--Global Styles-->
+            <Color x:Key="NavigationPrimary">#212026</Color>
+            <Style TargetType="NavigationPage" ApplyToDerivedTypes="true">
+                <Setter Property="BarBackgroundColor" Value="{StaticResource NavigationPrimary}" />
+                <Setter Property="BarTextColor" Value="White" />
+            </Style>
+            <Style x:Key="PageStyle" TargetType="ContentPage">
+                <Setter Property="BackgroundColor" Value="#121212" />
+            </Style>
+            <Style x:Key="LabelStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="White" />
+            </Style>
+
+            <Style TargetType="Button">
+                <Setter Property="TextColor" Value="White" />
+            </Style>
+
+            <Style TargetType="Entry">
+                <Setter Property="TextColor" Value="White" />
+            </Style>
+
+            <Style TargetType="Editor">
+                <Setter Property="TextColor" Value="White" />
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+    
+</Application>
