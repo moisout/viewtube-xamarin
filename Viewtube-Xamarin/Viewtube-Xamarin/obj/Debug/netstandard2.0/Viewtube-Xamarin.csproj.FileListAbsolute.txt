@@ -15,3 +15,4 @@ C:\Projects\Viewtube-Xamarin\Viewtube-Xamarin\Viewtube-Xamarin\obj\Debug\netstan
 C:\Projects\viewtube-xamarin\Viewtube-Xamarin\Viewtube-Xamarin\obj\Debug\netstandard2.0\Views\VideosPage.xaml.g.cs
 C:\Projects\viewtube-xamarin\Viewtube-Xamarin\Viewtube-Xamarin\obj\Debug\netstandard2.0\Views\VideoWatchPage.xaml.g.cs
 C:\Projects\viewtube-xamarin\Viewtube-Xamarin\Viewtube-Xamarin\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Projects\viewtube-xamarin\Viewtube-Xamarin\Viewtube-Xamarin\obj\Debug\netstandard2.0\Viewtube-Xamarin.csprojAssemblyReference.cache

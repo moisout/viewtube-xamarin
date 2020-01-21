@@ -20,6 +20,11 @@ namespace Viewtube_Xamarin.ViewModels
             set { SetProperty(ref videoDetail, value); }
         }
 
+        public bool IsReady
+        {
+            get => !IsBusy;
+        }
+
         public IVideoStore<VideoDetail> VideoDetailStore => DependencyService.Get<IVideoStore<VideoDetail>>();
         public VideoDetailViewModel(VideoElement video = null)
         {
