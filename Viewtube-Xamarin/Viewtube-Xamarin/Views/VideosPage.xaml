@@ -22,7 +22,7 @@
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <StackLayout Padding="10">
+                        <StackLayout>
                             <Grid>
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition />
@@ -32,7 +32,7 @@
                                     <RowDefinition Height="210"/>
                                     <RowDefinition/>
                                     <RowDefinition Height="20" />
-                                    <RowDefinition Height="20" />
+                                    <RowDefinition Height="30" />
                                 </Grid.RowDefinitions>
                                 <Image Aspect="AspectFill" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="0">
                                     <Image.Source>
@@ -45,7 +45,7 @@
                                        LineBreakMode="WordWrap" 
                                        Style="{DynamicResource ListItemTextStyle}" 
                                        TextColor="#ffffff"
-                                       Margin="0,6,0,3"
+                                       Margin="10,6,0,3"
                                        Grid.Row="1"
                                        Grid.ColumnSpan="2"
                                        FontSize="16" />
@@ -54,6 +54,7 @@
                                        LineBreakMode="NoWrap"
                                        Style="{DynamicResource ListItemDetailTextStyle}"
                                        TextColor="#d8d8d8"
+                                       Margin="10,0,0,0"
                                        Grid.Row="2"
                                        Grid.ColumnSpan="2"
                                        FontSize="14" />
@@ -62,6 +63,7 @@
                                        LineBreakMode="NoWrap"
                                        Style="{DynamicResource ListItemDetailTextStyle}"
                                        TextColor="#d8d8d8"
+                                       Margin="10,0,0,0"
                                        Grid.Row="3"
                                        Grid.Column="0"
                                        Grid.ColumnSpan="1"
@@ -71,6 +73,7 @@
                                        LineBreakMode="NoWrap"
                                        Style="{DynamicResource ListItemDetailTextStyle}"
                                        TextColor="#d8d8d8"
+                                       Margin="0,0,10,0"
                                        Grid.Row="3"
                                        Grid.Column="1"
                                        Grid.ColumnSpan="1"

@@ -27,11 +27,11 @@
                         IsRunning="True" 
                         IsVisible="{Binding IsBusy, Mode=OneWay}"/>
             </AbsoluteLayout>
-            <!--<videoPlayer:VideoPlayer Grid.Row="0" 
+            <videoPlayer:VideoPlayer Grid.Row="0" 
                                          Grid.ColumnSpan="2" 
                                          Grid.Column="0" 
                                          AutoPlay="False"
-                                         Source="{Binding VideoDetail.FormatStreams[0].Url}" />-->
+                                         Source="{Binding VideoDetail.FormatStreams[0].Url}" />
             <ScrollView Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="1">
                 <Grid Padding="10,0" IsVisible="{Binding IsReady, Mode=OneWay}">
                     <Grid.ColumnDefinitions>
